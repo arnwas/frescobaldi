@@ -26,6 +26,7 @@ Information about the Frescobaldi application.
 # these variables are also used by the distutils setup
 name = "frescobaldi"
 version = "3.0.0"
+extension_api = "0.9.0"
 description = "LilyPond Music Editor"
 long_description = \
     "Frescobaldi is an advanced text editor to edit LilyPond sheet music files. " \
@@ -35,6 +36,8 @@ maintainer_email = "info@frescobaldi.org"
 domain = "frescobaldi.org"
 url = "http://www.{0}/".format(domain)
 license = "GPL"
+
+required_python_ly_version = (0, 9, 4)
 
 # this one is used everywhere in the application
 appname = "Frescobaldi"

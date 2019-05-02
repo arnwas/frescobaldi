@@ -4,7 +4,10 @@ ChangeLog of Frescobaldi, http://www.frescobaldi.org/
 
 Changes in 3.0.1 --
 
+* Requirement changes:
+  - Frescobaldi now requires Python3.3+
 * New features:
+  - Possibility to load external extensions
   - New "First System Only" option in Custom Engrave
   - Goto Line command (#927, feature request #676)
   - Rename file command (#1057, feature request #980)
@@ -14,6 +17,7 @@ Changes in 3.0.1 --
   - fixed #705, discrepancy of LilyPond vs. system version of GhostScript
     on Linux (#926)
   - fixed #1094, includepaths on Windows (#1095)
+  - fixed #1121, NameError: name 'widgets' is not defined
 * Improvements:
   - Smarter behaviour of the autocompletion popup (#918, #922)
   - New command File->Rename/Move... (#980)
@@ -21,6 +25,7 @@ Changes in 3.0.1 --
   - Show absolute path of include files in tooltip (#941)
   - Restructure Tools Menu (#1080)
 * Internals:
+  - Multithreaded Job Queue preparing multicore support (#1103)
   - Rewrite code handling external processes/jobs (#1100)
 
 Changes in 3.0.0 -- February 17th, 2017
